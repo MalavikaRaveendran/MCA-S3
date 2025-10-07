@@ -1,0 +1,33 @@
+def maaark(marks):
+    total = sum(marks)
+    average = total / len(marks) if marks else 0
+    return total, average
+
+
+marks = [80, 90, 75, 85]
+total, avg = maaark(marks)
+print(f"Sum: {total}, Average: {avg}")
+
+**************   user input  **************
+
+def maaark(marks):
+    total = sum(marks)
+    average = total / len(marks) if marks else 0
+    return total, average
+
+a = input("Enter marks separated by spaces: ")
+marks = list(map(int, a.split()))
+
+total, avg = maaark(marks)
+print(f"Sum: {total}, Average: {avg}")
+
+
+def get_marks_info(marks):
+    total = sum(marks)
+    average = total / len(marks)
+    return total, average
+
+marks = [80, 90, 75, 85]
+total, avg = get_marks_info(marks)
+print("Sum:", total, "Average:", avg)
+
